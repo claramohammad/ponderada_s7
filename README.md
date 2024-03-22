@@ -12,25 +12,43 @@ Esta seção da documentação foca na descrição detalhada dos testes automati
 
 ### Service Tests
 
-- *Descrição:* Verifica se o serviço retorna a lista completa de registros de presença.
-- *Cenário Testado:* Chamada do método getAllAttendances sem parâmetros.
-- *Expectativa:* O serviço deve retornar uma lista contendo todos os registros de presença existentes no banco de dados.
+#### Teste 1: getAllAttendances retorna lista de presenças
 
+**Objetivo:** Verificar se a lista completa de presenças é retornada.
+**Pré-condição:** Banco de dados contém registros de presenças.
+**Procedimento de Teste:** Invocar o método getAllAttendances.
+**Resultado Esperado:** Uma lista contendo todos os registros de presenças é retornada.
+**Resultado Obtido:** Lista de presenças retornada com sucesso.
+**Pós-condição:** Nenhuma alteração no estado do banco de dados.
 
-- *Descrição:* Testa a capacidade do serviço de registrar corretamente a presença de alunos por seus IDs em uma determinada aula.
-- *Cenário Testado:* Chamada do método postAttendanceListByIds com um array de IDs de alunos e um ID de aula válidos.
-- *Expectativa:* O serviço deve inserir corretamente os registros de presença no banco de dados e retornar os IDs das inserções.
+#### Teste 2: postAttendanceListByIds registra presenças corretamente
+
+**Objetivo:** Assegurar que a presença dos alunos seja registrada corretamente.
+**Pré-condição:** IDs de alunos e ID de aula válidos são fornecidos.
+**Procedimento de Teste:** Executar o método postAttendanceListByIds com um array de IDs de alunos e um ID de aula.
+**Resultado Esperado:** Os registros de presença são criados no banco de dados, e os IDs das inserções são retornados.
+**Resultado Obtido:** Presenças registradas corretamente, e IDs das inserções retornados.
+**Pós-condição:** Novos registros de presença são adicionados ao banco de dados.
 
 ### Controller Tests
 
-- *Descrição:* Garante que o controlador responda adequadamente ao solicitar a lista de presenças para a rota especificada.
-- *Cenário Testado:* Requisição GET para a rota /.
-- *Expectativa:* O controlador deve responder com a lista completa dos registros de presença.
+#### Teste 3: getAllAttendances manipula requisição e resposta corretamente
 
+**Objetivo:** Confirmar que a rota de obtenção de todas as presenças funciona conforme esperado.
+**Pré-condição:** Rota / é acessada.
+**Procedimento de Teste:** Enviar uma requisição GET para a rota /.
+**Resultado Esperado:** O controlador responde com a lista completa de registros de presença.
+**Resultado Obtido:** Lista completa de presenças retornada com sucesso.
+**Pós-condição:** Estado do banco de dados inalterado.
 
-- *Descrição:* Verifica se o controlador trata corretamente a inclusão de novos registros de presença por meio da rota especificada.
-- *Cenário Testado:* Requisição POST para a rota /attendanceListIds/:ids com um corpo de requisição contendo studentIds e lessonId válidos.
-- *Expectativa:* O controlador deve processar a requisição e retornar os IDs das novas inserções de presença no banco de dados.
+#### Teste 4: postAttendanceListByIds processa requisição e resposta corretamente
+
+**Objetivo:** Verificar se a rota de registro de presenças processa corretamente os dados enviados.
+**Pré-condição:** Rota /attendanceListIds/:ids é acessada com um corpo de requisição contendo studentIds e lessonId.
+**Procedimento de Teste:** Enviar uma requisição POST para a rota /attendanceListIds/:ids com studentIds e lessonId.
+**Resultado Esperado:** Controlador processa a requisição e retorna os IDs dos registros de presença criados.
+**Resultado Obtido:** IDs dos novos registros de presença retornados com sucesso.
+**Pós-condição:** Novos registros de presença são adicionados ao banco de dados.ctativa:* O controlador deve processar a requisição e retornar os IDs das novas inserções de presença no banco de dados.
 
 ## Executando os Testes
 
