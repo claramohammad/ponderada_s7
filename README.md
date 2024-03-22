@@ -54,7 +54,7 @@ Esta seção da documentação foca na descrição detalhada dos testes automati
 
 ## Executando os Testes
 
-Utilizando o projeto FLY, esse teste foi realizado dentro de ["tests"](2024-T0009-ES05-G05-main\src\backend\src\tests\attendanceList.test.js), é possível encontrar o código também em [Codigo_teste](Codigo_teste)
+Utilizando o projeto FLY, esse teste foi realizado dentro de ["tests"](2024-T0009-ES05-G05-main/src/backend/src/tests/attendanceList.test.js), é possível encontrar o código também em [Codigo_teste](Codigo_teste)
 Para executar os testes, é utilizado o comando abaixo no terminal:
 
 ```
