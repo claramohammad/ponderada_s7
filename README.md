@@ -4,8 +4,6 @@ Ponderada referente à semana 7 - testes automatizados
 
 # Documentação de Testes Automatizados
 
-[Link para arquivo com documentação do teste]
-
 ## Introdução
 
 Esta seção da documentação foca na descrição detalhada dos testes automatizados desenvolvidos para as funcionalidades AttendanceListService e AttendanceListController. Estes testes têm como finalidade assegurar a correta funcionalidade e a integridade das operações relacionadas ao registro e à consulta de listas de presença na API.
