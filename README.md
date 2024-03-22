@@ -4,6 +4,8 @@ Ponderada referente à semana 7 - testes automatizados
 
 # Documentação de Testes Automatizados
 
+[Link para arquivo com documentação do teste]
+
 ## Introdução
 
 Esta seção da documentação foca na descrição detalhada dos testes automatizados desenvolvidos para as funcionalidades AttendanceListService e AttendanceListController. Estes testes têm como finalidade assegurar a correta funcionalidade e a integridade das operações relacionadas ao registro e à consulta de listas de presença na API.
@@ -52,7 +54,8 @@ Esta seção da documentação foca na descrição detalhada dos testes automati
 
 ## Executando os Testes
 
-Para executar os testes, utilize o comando abaixo no terminal:
+Utilizando o projeto FLY, esse teste foi realizado dentro de ["tests"](2024-T0009-ES05-G05-main\src\backend\src\tests\attendanceList.test.js), é possível encontrar o código também em [Codigo_teste](Codigo_teste)
+Para executar os testes, é utilizado o comando abaixo no terminal:
 
 ```
 npm test
@@ -67,3 +70,4 @@ A execução dos testes resultou em um sucesso total, validando as funcionalidad
 ![Imagem_Teste](img/print_test.png)
 
 <h6 align="center"> Fonte: Elaborado por Clara Coelho Mohammad </h6>
+
