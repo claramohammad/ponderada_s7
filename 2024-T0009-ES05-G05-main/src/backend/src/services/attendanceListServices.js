@@ -26,7 +26,6 @@ class AttendanceListService {
     return results.map(result => result.insertId);
 }
 
-}
 
 }
 

@@ -6,6 +6,11 @@
     "mysql2": "^3.9.2"
   },
   "devDependencies": {
+    "jest": "^29.7.0",
     "ssh2": "^1.15.0"
+  },
+
+  "scripts": {
+    "test": "jest"
   }
 }
